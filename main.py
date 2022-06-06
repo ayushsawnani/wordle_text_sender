@@ -32,7 +32,7 @@ options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
 
-driver = webdriver.Chrome(desired_capabilities=dc, executable_path='C:/Users/Ayush/OneDrive/Documents/Code/chromedriver.exe', chrome_options=chrome_options, options=options)
+driver = webdriver.Chrome(desired_capabilities=dc, executable_path=secrets.path, chrome_options=chrome_options, options=options)
 driver.minimize_window()
 
 
